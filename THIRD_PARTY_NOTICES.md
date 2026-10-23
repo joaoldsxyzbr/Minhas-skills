@@ -17,14 +17,14 @@ Os arquivos incorporados permanecem sob a licença MIT original. As demais skill
 - Projeto: [cloudflare/skills](https://github.com/cloudflare/skills)
 - Licença: Apache-2.0
 - Commit de origem: `86505e44f87d801aa1864a3c4109e9a8ae5c409f`
-- Arquivos incorporados: skills `wrangler` e `workers-best-practices), mais as referências `configuration.md`, `platform-apis.md` e `runtime-patterns.md`.
+- Arquivos incorporados: skills `wrangler` e `workers-best-practices`, mais as referências `configuration.md`, `platform-apis.md` e `runtime-patterns.md`.
 - Licença: [vendor/cloudflare/LICENSE](vendor/cloudflare/LICENSE).
 
 O restante da skill `cloudflare-platform` é original. Não foram copiados scripts, servidor MCP ou configuração de plugin.
 
 ## GitHub
 
-O plugin/conector GitHub não fornece uma skill própria redistribuível. A skill `github-workflows` é original e descreve fluxos portáveis.
+O pacote do conector GitHub disponível não contém uma skill própria redistribuível. A skill `github-workflows` é original e descreve fluxos portáveis.
 
 ## Product Design
 
