@@ -178,27 +178,19 @@ If you find issues, fix them inline. No need to re-review — just fix and move 
 
 ## Execution Handoff
 
-After saving and self-reviewing the plan, link it for your human partner
-to read. If they have already explicitly supplied an execution method, ask
-them to review the plan and confirm it captures what they want; wait for that
-review before implementation, then use the preserved method. Otherwise, ask
-them to review the plan and choose an execution method before implementation.
+After saving and self-reviewing the plan, link it for the user to inspect.
+If the user explicitly requested implementation or supplied an execution
+method, treat that as authorization to proceed with the plan when it stays
+within the requested scope. Do not wait for a second approval of the plan
+or ask them to choose a method again. Use the supplied method; if they
+authorized implementation but left the method open, choose the workflow
+that best fits the task.
 
-**When no execution method has already been supplied:**
+If the user asked only for a plan, deliver it and stop before implementation.
+Ask a focused question only when a material unresolved decision would change
+the scope, approach, target, or risk. Do not use plan review as a routine
+approval gate for work the user has already authorized.
 
-**"Plan complete and saved to `docs/superpowers/plans/<filename>.md`. Please review the plan. Which execution approach would you prefer?**
-
-- **Subagent-driven** - A fresh subagent implements each task and a fresh reviewer checks it before the next one starts, then a whole-branch review at the end. Most thorough; costs a fresh context per task and per review.
-- **Native** - I implement every task myself in this session, the way this harness runs work, then one fresh reviewer on the most capable model checks the whole branch. Cheapest and fastest; no independent review until the end. Runs well with a mid-tier session model, since the plan carries the design.
-
-**For this plan I recommend <one of the two>, because <one sentence from the plan: how much the tasks depend on each other's interfaces, how many there are, what a shipped mistake would cost>. Does the plan capture what you want, and which approach should we use?"**
-
-**When an execution method has already been supplied:**
-
-**"Plan complete and saved to `docs/superpowers/plans/<filename>.md`. Please review the plan. Does it capture what you want?"**
-
-**If Subagent-driven chosen:**
-- **REQUIRED SUB-SKILL:** Use superpowers:subagent-driven-development
-
-**If Native chosen:**
-- **REQUIRED SUB-SKILL:** Use superpowers:executing-plans
+When implementation is authorized:
+- **Subagent-driven:** Use superpowers:subagent-driven-development when the task benefits from independent task implementation and review.
+- **Native:** Use superpowers:executing-plans when implementing the plan in this session.
