@@ -245,19 +245,23 @@ round of questions the check produces. Without a subagent tool, read the
 document as that builder yourself.
 
 <HARD-GATE>
-Nothing gets built until your human partner approves the design doc:
-the short one for a small change, the full one for a project.
-Building includes writing product code, scaffolding, installing
-dependencies, creating projects, and invoking an implementation skill.
-Reading and exploring are fine.
+For open-ended product or feature work, do not start implementation until
+the user has approved the design doc: the short version for a small change,
+the full version for a project. Reading and exploring are fine.
 
-Two exceptions. If they opted out of the questions, the skill is done
-and the gate goes with it. A spike they said yes to may be built; it
-stays labeled throwaway, and keeping what it produced is a new request
-that comes back through this gate.
+A clear, scoped request to implement, apply, or execute a change already
+authorizes the routine design, planning, and implementation steps needed
+to complete that request. In that case, do not pause for separate approval
+of a design doc or plan that only records the requested scope. State
+material assumptions and continue. Ask only if an unresolved decision
+would materially change the outcome or scope. If the user asks only for
+ideas or a plan, stop at that requested deliverable.
 
-After the design doc is approved, the next step is the plan: invoke
-superpowers:writing-plans and no other skill.
+A spike the user explicitly approves may be built as throwaway work. Keeping
+or expanding it beyond the spike requires authorization.
+
+For open-ended work that passes the design gate, the next step is the plan:
+invoke superpowers:writing-plans and no other skill.
 </HARD-GATE>
 
 ## Red Flags
