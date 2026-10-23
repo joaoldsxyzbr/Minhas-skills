@@ -6,19 +6,18 @@ O objetivo é reunir práticas úteis em um pacote revisável e sem mecanismos p
 
 ## Estrutura
 
-- `skills/`: skills próprias, escritas para o formato portável Agent Skills.
-- `vendor/superpowers/`: skills selecionadas do projeto Superpowers, preservadas com a licença e a atribuição upstream.
-- `vendor/cloudflare/`: skills oficiais selecionadas da Cloudflare, preservadas com a licença e a atribuição upstream.
+- `skills/`: skills próprias e seleções licenciadas de Superpowers e Cloudflare, cada uma em sua pasta.
+- `vendor/`: licenças originais das coleções incorporadas.
 - `THIRD_PARTY_NOTICES.md`: origem, licenças e escopo do material incorporado.
 - `PRIVACY.md`: limites verificáveis da promessa de privacidade.
 
-## Conteúdo planejado
+## Conteúdo
 
-- Fluxos de engenharia: descoberta, planejamento, execução, TDD, depuração sistemática, revisão e verificação.
+- Fluxos de engenharia: brainstorming, TDD, depuração sistemática e verificação.
 - Produto e design: pesquisa UX, exploração de alternativas, auditoria e validação visual em instruções próprias.
-- Cloudflare: skills oficiais selecionadas para plataforma, Workers e Wrangler.
+- Cloudflare: Wrangler e boas práticas de Workers, com referências incluídas.
 - GitHub: fluxo original para repositórios, branches, commits e pull requests.
-- Pesquisa aprofundada: perguntas, fontes primárias, verificação cruzada e síntese citada.
+- Pesquisa aprofundada: fontes primárias, verificação cruzada e síntese citada.
 
 ## Limites da privacidade
 
