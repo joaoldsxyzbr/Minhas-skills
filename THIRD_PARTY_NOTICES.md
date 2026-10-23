@@ -29,3 +29,8 @@ O pacote do conector GitHub disponível não contém uma skill própria redistri
 ## Product Design
 
 As skills de Product Design neste projeto são originais. O pacote de origem identifica seu conteúdo como proprietário; nenhum texto proprietário foi redistribuído.
+
+
+## Revisão local 0.2.0
+
+Em 2026-10-23, os arquivos derivados de Superpowers e Cloudflare foram revisados e, em parte, reescritos para fluxos proporcionais, referências locais, JavaScript e ferramentas nativas, privacidade de diagnósticos e verificação baseada em evidência. Isso inclui as skills e referências listadas acima. Os avisos e as licenças originais permanecem aplicáveis ao material derivado; adaptação local não elimina atribuição. As regras compartilhadas, roteador e ferramentas de validação desta revisão são material do projeto.

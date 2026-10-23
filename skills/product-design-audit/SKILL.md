@@ -5,6 +5,8 @@ description: Evaluate an existing interface or end-to-end user flow for usabilit
 
 # Product Design Audit
 
+Apply the [shared workflow rules](../using-minhas-skills/references/workflow-rules.md); read once and reuse for this task.
+
 Use when asked to critique or improve an existing interface, journey, or task flow. Review the whole flow when possible; do not infer unseen screens.
 
 ## Inspect the experience
@@ -21,3 +23,4 @@ Use when asked to critique or improve an existing interface, journey, or task fl
 For each finding, include the screen or step, evidence, user impact, severity, and a practical fix. Prioritize blockers and high-impact problems. Avoid vague claims such as “not intuitive” without describing what the user sees and where they get stuck.
 
 Separate usability defects from subjective preferences. State which parts of the flow were unavailable and do not claim accessibility conformance without appropriate testing.
+

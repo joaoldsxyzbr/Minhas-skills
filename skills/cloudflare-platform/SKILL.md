@@ -5,6 +5,8 @@ description: Plan, build, debug, or review applications and infrastructure using
 
 # Cloudflare Platform
 
+Apply the [shared workflow rules](../using-minhas-skills/references/workflow-rules.md); read once and reuse for this task.
+
 Use this skill for Cloudflare development and operations. Keep the implementation aligned with the project's existing architecture and current Cloudflare product behavior.
 
 ## Start from the repository
@@ -42,3 +44,4 @@ Follow the CLI already used in the repository. Inspect its version and help befo
 ## Completion report
 
 Summarize the changed resources or files, checks run, environment affected, and whether a deployment occurred. Distinguish verified results from assumptions.
+

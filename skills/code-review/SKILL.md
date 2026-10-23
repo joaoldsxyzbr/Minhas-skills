@@ -5,6 +5,8 @@ description: Review a code change for correctness, regressions, security, and mi
 
 # Code Review
 
+Apply the [shared workflow rules](../using-minhas-skills/references/workflow-rules.md); read once and reuse for this task.
+
 Use when reviewing a diff, pull request, or proposed implementation. Review the change against its intended behavior and surrounding code.
 
 ## Review the change
@@ -20,3 +22,4 @@ Use when reviewing a diff, pull request, or proposed implementation. Review the 
 Lead with actionable issues ordered by severity. For each, give a concise title, file and location, the triggering condition, impact, and a practical fix. If no significant issue is found, say so and mention what was not tested.
 
 Do not modify the reviewed change unless asked. Do not approve, merge, or close a pull request unless explicitly authorized.
+

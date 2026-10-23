@@ -1,6 +1,6 @@
 # Privacidade e ausência de telemetria
 
-Este repositório fornece instruções em Markdown. Na versão atual, ele não contém aplicação, serviço remoto, analytics, pixels, beacons, rastreamento, atualização automática ou coleta própria de uso.
+Este repositório fornece skills em Markdown e ferramentas manuais de manutenção em Python padrão. As ferramentas validam arquivos locais e geram um ZIP, sem rede, e não são incluídas no ZIP de distribuição. Na versão atual, ele não contém aplicação, serviço remoto, analytics, pixels, beacons, rastreamento, atualização automática ou coleta própria de uso.
 
 ## O que as skills fazem
 
@@ -16,3 +16,4 @@ O aplicativo de IA, o sistema operacional, extensões, plugins, ferramentas de p
 ## Auditoria
 
 Antes de aceitar uma atualização, revise o diff. Skills novas devem ser texto por padrão. Scripts, hooks, binários, workflows com acesso a dados externos e dependências precisam de justificativa explícita e revisão separada. Não aceite telemetria ou rastreamento ocultos.
+

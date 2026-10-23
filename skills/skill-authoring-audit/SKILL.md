@@ -5,6 +5,8 @@ description: Create, revise, or audit portable agent skills for clear routing, u
 
 # Skill Authoring and Audit
 
+Apply the [shared workflow rules](../using-minhas-skills/references/workflow-rules.md); read once and reuse for this task.
+
 Use when creating or changing a skill, reviewing a skill collection, or checking whether a skill is safe to distribute. Keep the skill focused on one recognizable task and usable without hidden infrastructure.
 
 ## Author the skill
@@ -41,3 +43,10 @@ Inspect every instruction, reference, dependency, and executable file included w
 - Test routing with at least one in-scope and one out-of-scope example.
 - Report concrete issues with severity, location, impact, and a practical fix.
 - Never claim privacy, security, licensing, or compatibility checks passed unless they were actually performed.
+
+
+## Behavioral evaluation
+
+Use a matrix covering direct invocation, combined domains, an out-of-scope request, missing tools, untrusted content, authorized execution, plan-only boundaries and destructive ambiguity. Check that specialized design discovery wins over generic brainstorming and that direct invocation still loads the shared rules.
+
+After substantial revisions, use fresh independent agents when available to perform realistic local tasks using the candidate skill files. Give them requirements and raw fixtures, not the expected diagnosis or answers. Keep production systems out of the exercise. Inspect actual artifacts and rerun checks independently; distinguish behavioral observations from structural validation and host activation. Preserve failed cases and retest relevant failures after changes.

@@ -5,6 +5,8 @@ description: Implement a supplied product design or reference and verify the ren
 
 # Product Design Implementation and QA
 
+Apply the [shared workflow rules](../using-minhas-skills/references/workflow-rules.md); read once and reuse for this task.
+
 Use when implementing an approved design, screenshot, mockup, or visual reference in an existing application, or when checking the visual quality of a UI change.
 
 ## Implement
@@ -23,3 +25,4 @@ Use when implementing an approved design, screenshot, mockup, or visual referenc
 - Test keyboard navigation, visible focus, labels, and interaction feedback for changed controls.
 - Fix visible regressions and inspect the updated rendering.
 - If visual inspection or a state cannot be tested, say exactly what remains unverified. Do not claim pixel accuracy, usability, or accessibility based only on source code.
+

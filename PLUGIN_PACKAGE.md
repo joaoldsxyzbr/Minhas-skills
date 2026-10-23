@@ -6,13 +6,13 @@ Este repositório usa o formato portátil Agent Plugins 1.0 para um plugin somen
 
 O arquivo plugin.json fica na raiz e declara a identidade do plugin. As skills ficam diretamente em skills/<nome-da-skill>/SKILL.md. Cada pasta de skill corresponde ao valor name do frontmatter YAML.
 
-O pacote tem 21 skills. Não inclui mcp.json, .app.json, apps conectados, credenciais, scripts ou hooks. O pacote não precisa desses componentes para oferecer instruções reutilizáveis.
+O pacote tem 21 skills. O ZIP gerado por `python tools/validate.py --archive ../minhas-skills.zip` não inclui mcp.json, .app.json, apps conectados, credenciais, scripts ou hooks. As pastas de manutenção tools/, tests/ e docs/ ficam fora desse ZIP. O pacote não precisa desses componentes para oferecer instruções reutilizáveis.
 
 ## Gerar o ZIP pelo GitHub
 
 1. Abra o repositório Minhas-skills no GitHub.
 2. Escolha Code > Download ZIP.
-3. Envie o ZIP pela opção Upload plugin no ChatGPT, se ela estiver disponível para sua conta ou workspace.
+3. O Download ZIP inclui as ferramentas de manutenção. Para distribuir somente o plugin, extraia-o e execute `python tools/validate.py --archive ../minhas-skills.zip`; envie esse ZIP pela opção de upload disponível.
 
 O ZIP de código do GitHub coloca o repositório dentro de uma única pasta superior. Esse formato é aceito: o arquivo do plugin fica na raiz dessa pasta e não há outros projetos ao lado.
 
@@ -28,3 +28,4 @@ A opção de upload de plugins e as permissões para usá-la dependem do produto
 - Sem arquivos de credenciais, integrações não solicitadas ou artefatos alheios ao plugin.
 
 O GitHub armazena as fontes do pacote. A criação ou instalação do plugin no ChatGPT é uma etapa separada.
+

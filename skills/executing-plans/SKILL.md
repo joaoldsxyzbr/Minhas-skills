@@ -5,6 +5,8 @@ description: Carry out an agreed implementation plan in small verified steps whi
 
 # Executing Plans
 
+Apply the [shared workflow rules](../using-minhas-skills/references/workflow-rules.md); read once and reuse for this task.
+
 Use when requirements and an implementation plan are already agreed and the task is to carry them out. For a small direct change, work directly without unnecessary ceremony.
 
 ## Prepare
@@ -29,3 +31,4 @@ Use when requirements and an implementation plan are already agreed and the task
 - Review the final diff for unintended files, secrets, generated artifacts, and incomplete work.
 - Summarize what changed, checks run, and any limitation. Do not report unrun checks as passing.
 - Integrate, publish, deploy, or merge only when that action is authorized.
+

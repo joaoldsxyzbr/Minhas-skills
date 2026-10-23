@@ -5,6 +5,8 @@ description: Work safely with GitHub repositories, issues, branches, commits, co
 
 # GitHub Workflows
 
+Apply the [shared workflow rules](../using-minhas-skills/references/workflow-rules.md); read once and reuse for this task.
+
 Use this skill for repository operations. Keep the user's selected repository, branch, and requested scope explicit throughout the task.
 
 ## Establish context
@@ -34,3 +36,4 @@ Use this skill for repository operations. Keep the user's selected repository, b
 For review requests, identify the base and head, read the complete relevant diff, trace changed behavior, and report actionable findings by severity with file and line references. Separate confirmed defects from questions or suggestions.
 
 Before saying work is ready, inspect the resulting diff and report actual checks performed, including any skipped or unavailable checks.
+

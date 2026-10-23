@@ -5,6 +5,8 @@ description: Build, inspect, migrate, and troubleshoot Cloudflare D1 databases w
 
 # Cloudflare D1
 
+Apply the [shared workflow rules](../using-minhas-skills/references/workflow-rules.md); read once and reuse for this task.
+
 Use for D1 schema, queries, migrations, Worker bindings, local development, deployment configuration, or troubleshooting. Consult current Cloudflare documentation before relying on CLI flags, limits, platform behavior, or syntax.
 
 ## Establish the target
@@ -43,3 +45,4 @@ Use for D1 schema, queries, migrations, Worker bindings, local development, depl
 - Local development: https://developers.cloudflare.com/d1/best-practices/local-development/
 - Environments: https://developers.cloudflare.com/d1/configuration/environments/
 - Import and export: https://developers.cloudflare.com/d1/best-practices/import-export-data/
+

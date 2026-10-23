@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "minhas-skills",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Coleção de skills para engenharia de software, produto, Cloudflare, GitHub e pesquisa aprofundada.",
   "repository": "https://github.com/joaoldsxyzbr/Minhas-skills",
   "keywords": [

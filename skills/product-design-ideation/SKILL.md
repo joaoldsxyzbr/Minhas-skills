@@ -5,7 +5,11 @@ description: Explore product and UX directions for a new feature or flow using u
 
 # Product Design Ideation
 
+Apply the [shared workflow rules](../using-minhas-skills/references/workflow-rules.md); read once and reuse for this task.
+
 Use when shaping a new product experience or making a substantial change to an existing flow. For a small, clearly specified UI edit, implement the request directly.
+
+This is the lead discovery workflow for product UX. Do not also run brainstorming for the same discovery. If requirements are approved or the request is a small specified edit, proceed directly with implementation and relevant QA.
 
 ## Frame the problem
 
@@ -24,3 +28,4 @@ Use when shaping a new product experience or making a substantial change to an e
 ## Make it reviewable
 
 Present a concise flow, outline, wireframe, or prototype when it helps compare options. State unresolved questions and what research or usability test could answer them. Do not describe a mockup as user-tested or production-ready without evidence.
+

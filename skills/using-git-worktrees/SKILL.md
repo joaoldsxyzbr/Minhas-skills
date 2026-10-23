@@ -5,6 +5,8 @@ description: Isolate a substantial change in a Git worktree when parallel work o
 
 # Using Git Worktrees
 
+Apply the [shared workflow rules](../using-minhas-skills/references/workflow-rules.md); read once and reuse for this task.
+
 Use when a task needs isolation from current edits, multiple branches must be checked out at once, or an agreed plan is substantial enough to benefit from a separate working directory. Do not create a worktree for a one-line edit without a reason.
 
 ## Before creating one
@@ -24,3 +26,4 @@ Use when a task needs isolation from current edits, multiple branches must be ch
 ## Clean up
 
 Remove a worktree only after its changes are safely committed, integrated, or explicitly discarded with authorization. Do not delete a branch or worktree containing uncommitted or unmerged user work.
+

@@ -2,7 +2,7 @@
 
 Coleção portável de skills para desenvolvimento, produto, Cloudflare, GitHub e pesquisa aprofundada.
 
-O objetivo é reunir práticas úteis em um pacote revisável, sem mecanismos próprios de telemetria ou rastreamento. As skills são instruções em Markdown; este repositório não adiciona scripts de execução automática, dependências ou envio próprio de dados para serviços externos.
+O objetivo é reunir práticas úteis em um pacote revisável, sem mecanismos próprios de telemetria ou rastreamento. As skills são instruções em Markdown. O plugin não inclui scripts de execução automática, dependências ou envio próprio de dados para serviços externos. As ferramentas de manutenção em `tools/` e os testes em `tests/` usam somente a biblioteca padrão do Python, rodam manualmente e ficam fora do ZIP gerado pelo validador.
 
 ## Conteúdo
 
@@ -36,3 +36,22 @@ Algumas skills e referências foram incorporadas de projetos de terceiros sob su
 ## Uso
 
 Cada skill fica em uma pasta própria dentro de skills/ e contém SKILL.md. Copie a pasta desejada para o diretório aceito pelo seu agente. Consulte as instruções e referências antes de usar, especialmente em ações remotas ou com efeitos duradouros.
+
+
+## Roteamento e carregamento
+
+O roteador escolhe um fluxo principal conforme a intenção e acrescenta somente o apoio técnico necessário. As regras compartilhadas são lidas uma vez; referências detalhadas entram apenas quando necessárias. Invocação direta também aplica essas regras. O host decide quais descrições ficam disponíveis e quais skills carrega; o pacote não promete ativação automática infalível.
+
+As skills e seus arquivos auxiliares ficam neste pacote. Documentação oficial pode fornecer evidências e integrações disponíveis podem executar ações autorizadas, sem encaminhamento para skills de outros plugins.
+
+## Verificação e empacotamento
+
+Execute manualmente, sem instalar dependências:
+
+```text
+python tools/validate.py
+python -m unittest discover -s tests -v
+python tools/validate.py --archive ../minhas-skills.zip
+```
+
+O validador verifica estrutura, referências e limites do pacote; não mede comportamento do modelo. Consulte [a avaliação da versão 0.2.0](https://github.com/joaoldsxyzbr/Minhas-skills/blob/main/docs/quality-0.2.0.md) para os testes comportamentais e suas limitações.
