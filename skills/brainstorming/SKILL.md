@@ -23,10 +23,17 @@ why?
   blue"). This is a quick, clear task. Do it, and say what you did.
 - **Something non-trivial is missing.** Start the conversation.
 
-Before you start implementing, you must, in order:
+Use the full discovery and approval sequence below for open-ended work
+when the brief leaves material product or scope decisions unresolved. For
+a clear, scoped request to implement, apply, or execute, honor the existing
+authorization and proceed through the necessary design and planning steps
+without a separate approval round. Ask only about decisions that would
+materially change the outcome or scope.
 
-1. Lay out the approaches in a message of their own, and have your
-   human partner pick one (see Lay out the approaches).
+When discovery is needed, before implementation:
+
+1. Lay out the approaches in a message of their own, and have the user
+   pick one (see Lay out the approaches).
 2. Write the design doc, short or full (see Size the Work).
 3. Get their approval of that doc.
 4. Invoke the superpowers:writing-plans skill.
