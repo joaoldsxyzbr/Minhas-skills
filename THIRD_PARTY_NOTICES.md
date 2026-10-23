@@ -7,7 +7,7 @@ Este repositório contém os materiais de terceiros listados abaixo. Os arquivos
 - Projeto: [obra/superpowers](https://github.com/obra/superpowers)
 - Licença: MIT
 - Commit de origem: `2ce8aa15d05bd57213e6f746f953aafb7ded7a8b`
-- Arquivos incorporados: skills `brainstorming`, `test-driven-development`, `systematic-debugging`, `verification-before-completion` e referência `writing-good-tests.md`.
+- Arquivos incorporados: skills `brainstorming`, `test-driven-development`, `systematic-debugging`, `verification-before-completion`, `writing-plans` e referência `writing-good-tests.md`.
 - Licença: [vendor/superpowers/LICENSE](vendor/superpowers/LICENSE).
 
 Os arquivos incorporados permanecem sob a licença MIT original. As demais skills foram escritas de forma independente.

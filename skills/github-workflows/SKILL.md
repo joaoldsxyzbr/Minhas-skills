@@ -12,7 +12,7 @@ Use this skill for repository operations. Keep the user's selected repository, b
 1. Confirm the repository owner/name and current branch from the connected tool or local Git state.
 2. Read repository instructions such as `AGENTS.md`, `CONTRIBUTING.md`, and relevant project documentation.
 3. Inspect the current diff and working tree before editing. Preserve unrelated user changes.
-4. Prefer the connected GitHub integration for remote metadata and operations; use local Git when the task requires editing, running checks, or examining a checkout.
+4. Use the remote interface available in the current environment for repository metadata and operations; use local Git when the task requires editing, running checks, or examining a checkout.
 
 ## Make changes
 

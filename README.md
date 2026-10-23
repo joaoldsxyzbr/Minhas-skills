@@ -13,7 +13,7 @@ O objetivo é reunir práticas úteis em um pacote revisável e sem mecanismos p
 
 ## Conteúdo
 
-- Fluxos de engenharia: brainstorming, TDD, depuração sistemática e verificação.
+- Fluxos de engenharia: brainstorming, planejamento, TDD, depuração sistemática e verificação.
 - Produto e design: pesquisa UX, exploração de alternativas, auditoria e validação visual em instruções próprias.
 - Cloudflare: Wrangler e boas práticas de Workers, com referências incluídas.
 - GitHub: fluxo original para repositórios, branches, commits e pull requests.
