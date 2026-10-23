@@ -36,7 +36,7 @@ When discovery is needed, before implementation:
    pick one (see Lay out the approaches).
 2. Write the design doc, short or full (see Size the Work).
 3. Get their approval of that doc.
-4. Invoke the superpowers:writing-plans skill.
+4. Invoke the writing-plans skill.
 
 Two things aren't implementing: a spike they said yes to (see Spike to
 feel things out), and doing what they asked once they've opted out of
@@ -186,11 +186,10 @@ Only what they said goes in as theirs. Anything you filled in goes in
 as your proposal, with your reason. End each chunk by asking what's wrong
 or missing.
 
-Before you send a chunk, check it: does it describe something they'll
-look at, like a page, a screen, a schedule, or a printout? If so, and
-they haven't seen the visual companion offer yet, send the offer instead
-(its own message, below) and hold the chunk for the next message. Once
-they've accepted, put a mockup next to the description.
+Before sending a chunk, check whether a diagram, wireframe, or mockup
+would make it easier to understand. Create one with tools available in the
+current environment when it adds value; do not wait for a companion server
+or a file that is not included in the package.
 
 ## Size the Work
 
@@ -229,27 +228,16 @@ or two each and goes straight to your human partner, without the
 builder check.
 
 **Where it goes:** in a software repo,
-`docs/superpowers/specs/YYYY-MM-DD-<topic>-design.md`, committed.
+`docs/minhas-skills/specs/YYYY-MM-DD-<topic>-design.md`, committed.
 Otherwise, ask. Your human partner's preferences override both.
 
-**Builder check** (for a project): dispatch a fresh subagent with
-`builder-check-prompt.md` in this directory. When you tell your human
-partner you're writing it up, say a reviewer will read it first and you
-may come back once with a few questions. Don't hand over the document
-until the check is back. Sort what the builder asks into three piles:
-
-- **Answered already** by the conversation or the project: put the answer
-  in the document.
-- **Minor:** a sensible builder could settle it without changing what gets
-  built. Settle it yourself and mark it in the document as your call.
-- **Theirs:** only your human partner can answer it, and the answer changes
-  what gets built.
-
-Bring the "theirs" pile in one message, most important first. Update the
-document with their answers, then hand it over with a short list of the
-calls you made so they can check those while reading. That's the only
-round of questions the check produces. Without a subagent tool, read the
-document as that builder yourself.
+**Self-review** (for a project): check the design against the user's
+goals, non-goals, constraints, chosen approach, and unresolved decisions.
+Resolve details already answered by the conversation or project context.
+Make low-risk assumptions explicit. Ask the user only about an unresolved
+decision that would materially change the outcome or scope. An independent
+review may help when collaboration tools are available, but it is optional
+and must not depend on an unbundled skill or file.
 
 <HARD-GATE>
 For open-ended product or feature work, do not start implementation until
@@ -268,7 +256,7 @@ A spike the user explicitly approves may be built as throwaway work. Keeping
 or expanding it beyond the spike requires authorization.
 
 For open-ended work that passes the design gate, the next step is the plan:
-invoke superpowers:writing-plans and no other skill.
+invoke writing-plans and no other skill.
 </HARD-GATE>
 
 ## Red Flags
@@ -282,24 +270,9 @@ invoke superpowers:writing-plans and no other skill.
 | "They said 'sounds good' to the idea" | Approval covers what you showed them. A design doc you haven't written isn't approved. |
 | "The spike works, I'll keep building on it" | Keeping it is a new request. Back through the gate. |
 
-## Visual Companion
+## Visual Artifacts
 
-A browser tab for showing mockups, diagrams, and prototypes. It's a
-tool, not a mode: accepting it doesn't send every question to the
-browser.
-
-**Offer it just-in-time.** Offer it the first time one of the moments
-above comes up, never upfront. The offer is its own message with nothing
-else in it:
-
-> "This might be easier if I show you. Want me to open a browser tab with some mockups?"
-
-If they decline, stay in text and don't offer again unless they raise it.
-
-**Per question, ask: would they understand this better by seeing it?**
-Mockups, layouts, diagrams, and side-by-side designs go in the browser.
-Requirements, scope, tradeoffs, and conceptual choices stay in text. A
-question about a UI topic isn't automatically a visual question.
-
-If they accept, read `visual-companion.md` in this directory before
-starting the server.
+Use a wireframe, diagram, side-by-side sketch, or mockup when it helps the
+user compare or understand the proposed experience. Use tools available in
+the current environment. Keep the visual optional and do not depend on a
+plugin-specific browser server, script, or companion file.
