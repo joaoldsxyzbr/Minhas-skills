@@ -11,9 +11,9 @@ Write implementation plans for an engineer who has not seen this codebase or thi
 
 **Announce at start:** "I'm using the writing-plans skill to create the implementation plan."
 
-**Context:** If working in an isolated worktree, it should have been created via the `superpowers:using-git-worktrees` skill at execution time.
+**Context:** If working in an isolated worktree, it should have been created via the `using-git-worktrees` skill at execution time.
 
-**Save plans to:** `docs/superpowers/plans/YYYY-MM-DD-<feature-name>.md`
+**Save plans to:** `docs/minhas-skills/plans/YYYY-MM-DD-<feature-name>.md`
 - (User preferences for plan location override this default)
 
 ## Scope Check
@@ -56,7 +56,7 @@ independently testable deliverable.
 ```markdown
 # [Feature Name] Implementation Plan
 
-> **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
+> **For agentic workers:** Use the bundled `executing-plans` skill to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
 **Goal:** [One sentence describing what this builds]
 
@@ -180,17 +180,11 @@ If you find issues, fix them inline. No need to re-review — just fix and move 
 
 After saving and self-reviewing the plan, link it for the user to inspect.
 If the user explicitly requested implementation or supplied an execution
-method, treat that as authorization to proceed with the plan when it stays
-within the requested scope. Do not wait for a second approval of the plan
-or ask them to choose a method again. Use the supplied method; if they
-authorized implementation but left the method open, choose the workflow
-that best fits the task.
+method, treat that as authorization to proceed while staying within scope.
+Do not wait for a second approval of the plan. If the user asked only for a
+plan, deliver it and stop before implementation.
 
-If the user asked only for a plan, deliver it and stop before implementation.
-Ask a focused question only when a material unresolved decision would change
-the scope, approach, target, or risk. Do not use plan review as a routine
-approval gate for work the user has already authorized.
-
-When implementation is authorized:
-- **Subagent-driven:** Use superpowers:subagent-driven-development when the task benefits from independent task implementation and review.
-- **Native:** Use superpowers:executing-plans when implementing the plan in this session.
+When implementation is authorized, use the bundled `executing-plans`
+skill. If the environment supports delegation and independent tasks would
+benefit from it, keep the same plan, scope, and verification requirements
+while coordinating that work; do not require another plugin or skill.
