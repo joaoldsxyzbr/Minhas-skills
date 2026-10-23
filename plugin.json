@@ -1,0 +1,25 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "minhas-skills",
+  "version": "0.1.0",
+  "description": "Coleção de skills para engenharia de software, produto, Cloudflare, GitHub e pesquisa aprofundada.",
+  "repository": "https://github.com/joaoldsxyzbr/Minhas-skills",
+  "keywords": [
+    "skills",
+    "engenharia",
+    "produto",
+    "pesquisa"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Minhas Skills",
+        "shortDescription": "Engenharia, produto e pesquisa",
+        "longDescription": "Fluxos reutilizáveis para desenvolvimento, planejamento, revisão de código, design de produto, Cloudflare, GitHub e pesquisa aprofundada. O plugin contém skills e documentação; não inclui apps, conexões MCP ou scripts de telemetria.",
+        "category": "Developer Tools",
+        "capabilities": [],
+        "defaultPrompt": "Use Minhas Skills para selecionar e aplicar apenas os fluxos relevantes a esta tarefa."
+      }
+    }
+  }
+}

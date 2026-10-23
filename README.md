@@ -19,6 +19,12 @@ O objetivo é reunir práticas úteis em um pacote revisável, sem mecanismos pr
 - Pesquisa aprofundada: deep-research.
 - using-minhas-skills direciona tarefas para o fluxo mais específico.
 
+## Plugin do ChatGPT
+
+O manifesto portátil [plugin.json](plugin.json) e a pasta skills/ deixam o repositório no formato de um plugin somente de skills. Para preparar o ZIP pelo GitHub e conferir a estrutura, siga [PLUGIN_PACKAGE.md](PLUGIN_PACKAGE.md).
+
+Este pacote não inclui apps conectados nem configuração MCP. A instalação e a disponibilidade do upload de plugins dependem do produto e das permissões da conta ou workspace.
+
 ## Privacidade
 
 “Sem telemetria” descreve o conteúdo deste repositório: ele não inclui analytics, beacons, callbacks ocultos, scripts de rastreamento ou coleta própria de uso. Skills de pesquisa podem orientar consultas a fontes públicas quando necessário. O comportamento do agente, do sistema operacional e de serviços externos fica fora do controle do repositório. Leia [PRIVACY.md](PRIVACY.md).
