@@ -1,6 +1,6 @@
 # Avisos de terceiros
 
-Este repositório contém os materiais de terceiros listados abaixo. Os arquivos originais de licença foram preservados em `vendor/`.
+Este repositório contém os materiais de terceiros listados abaixo. Os textos integrais das licenças ficam na raiz do repositório.
 
 ## Superpowers
 
@@ -8,7 +8,7 @@ Este repositório contém os materiais de terceiros listados abaixo. Os arquivos
 - Licença: MIT
 - Commit de origem: `2ce8aa15d05bd57213e6f746f953aafb7ded7a8b`
 - Arquivos incorporados: skills `brainstorming`, `test-driven-development`, `systematic-debugging`, `verification-before-completion`, `writing-plans` e referência `writing-good-tests.md`.
-- Licença: [vendor/superpowers/LICENSE](vendor/superpowers/LICENSE).
+- Licença: [LICENSE-SUPERPOWERS.txt](LICENSE-SUPERPOWERS.txt).
 
 Os arquivos incorporados permanecem sob a licença MIT original. As demais skills foram escritas de forma independente.
 
@@ -18,7 +18,7 @@ Os arquivos incorporados permanecem sob a licença MIT original. As demais skill
 - Licença: Apache-2.0
 - Commit de origem: `86505e44f87d801aa1864a3c4109e9a8ae5c409f`
 - Arquivos incorporados: skills `wrangler` e `workers-best-practices`, mais as referências `configuration.md`, `platform-apis.md` e `runtime-patterns.md`.
-- Licença: [vendor/cloudflare/LICENSE](vendor/cloudflare/LICENSE).
+- Licença: [LICENSE-CLOUDFLARE.txt](LICENSE-CLOUDFLARE.txt).
 
 O restante da skill `cloudflare-platform` é original. Não foram copiados scripts, servidor MCP ou configuração de plugin.
 

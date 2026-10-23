@@ -7,7 +7,7 @@ O objetivo é reunir práticas úteis em um pacote revisável e sem mecanismos p
 ## Estrutura
 
 - `skills/`: skills próprias e seleções licenciadas de Superpowers e Cloudflare, cada uma em sua pasta.
-- `vendor/`: licenças originais das coleções incorporadas.
+- `LICENSE-SUPERPOWERS.txt` e `LICENSE-CLOUDFLARE.txt`: licenças das coleções incorporadas.
 - `THIRD_PARTY_NOTICES.md`: origem, licenças e escopo do material incorporado.
 - `PRIVACY.md`: limites verificáveis da promessa de privacidade.
 
