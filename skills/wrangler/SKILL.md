@@ -5,7 +5,7 @@ description: Run or troubleshoot Wrangler CLI commands in projects that have a w
 
 # Wrangler CLI
 
-Use this skill only when the project has `wrangler.jsonc`, `wrangler.json`, or `wrangler.toml` and no `cloudflare.config.ts`, or when the user asks for Wrangler. For a new project, a project with `cloudflare.config.ts`, or a project with no Cloudflare configuration, use the Cloudflare CLI (`cf`) instead: load the `cf-cli` skill if it is installed, or follow [Use cf with coding agents](https://developers.cloudflare.com/cf/agents/index.md). Do not add Wrangler to those projects.
+Use this skill only when the project has `wrangler.jsonc`, `wrangler.json`, or `wrangler.toml` and no `cloudflare.config.ts`, or when the user asks for Wrangler. For a new project, a project with `cloudflare.config.ts`, or a project with no Wrangler configuration, use the `cloudflare-platform` skill and the official Cloudflare CLI (`cf`) documentation when relevant. Do not add Wrangler to those projects.
 
 Use the project's Wrangler version and retrieve the relevant documentation before writing commands or configuration. CLI flags and configuration fields change; do not rely on memorized examples.
 
@@ -17,7 +17,7 @@ Use the project's Wrangler version and retrieve the relevant documentation befor
 
 ## Retrieve What the Task Needs
 
-Use the Cloudflare MCP `docs` tool if available, or fetch the relevant linked page directly. Follow links to the specific command or product involved; avoid loading the entire reference. If a page moves, rediscover it through the [Wrangler command index](https://developers.cloudflare.com/workers/wrangler/commands/index.md) or Cloudflare docs search.
+Fetch the relevant official Cloudflare documentation directly. Follow links to the specific command or product involved; avoid loading the entire reference. If a page moves, rediscover it through the [Wrangler command index](https://developers.cloudflare.com/workers/wrangler/commands/index.md) or Cloudflare docs search.
 
 | Task | Source |
 | --- | --- |
