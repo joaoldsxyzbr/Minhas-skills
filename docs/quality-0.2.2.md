@@ -8,6 +8,8 @@
 - `tests/routing-requests.json` agora contém **24** prompts: os 22 anteriores e `technical_autonomy` / `technical_autonomy_boundary`.
 - O plugin 0.2.2 mudou regras de autonomia técnica e limites de autorização depois dos exercícios documentados para 0.2.0.
 - A validação de pacote e testes unitários não executa tarefas reais de usuário, não examina conversas do ChatGPT e não mede ativação das skills pelo host.
+- Em 26/10/2026, uma comparação **somente leitura** na conversa de manutenção encontrou **21/21 arquivos `SKILL.md` instalados idênticos aos arquivos da `main`** do GitHub. Não inclui referências auxiliares nem comprova ativação/roteamento do host.
+- A fixture pública `tests/fixtures/routing/unrun-0.2.2.json` registra **zero observações**; o CI deve mostrar 24 `not_run`, zero sucessos e nenhuma ativação comprovada. Essa saída é um teste de integridade da mensuração, não um resultado do modelo.
 
 ## Executar os 24 casos com honestidade
 
