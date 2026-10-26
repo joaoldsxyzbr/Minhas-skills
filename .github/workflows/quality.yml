@@ -1,0 +1,33 @@
+name: Quality (offline checks)
+
+on:
+  push:
+    branches:
+      - main
+      - 'audit/**'
+  pull_request:
+  workflow_dispatch:
+  schedule:
+    # Segunda-feira, 08:00 horario de Brasilia (11:00 UTC).
+    - cron: '0 11 * * 1'
+
+permissions:
+  contents: read
+
+jobs:
+  offline-validation:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate package boundaries
+        run: python tools/validate.py
+      - name: Run standard-library regression tests
+        run: python -m unittest discover -s tests -v
+      - name: Verify distributable ZIP
+        run: python tools/validate.py --archive ../minhas-skills-ci.zip
