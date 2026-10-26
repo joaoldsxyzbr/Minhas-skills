@@ -58,9 +58,9 @@ As skills e seus arquivos auxiliares ficam neste pacote. Documentação oficial 
 
 ## Auditoria da versão 0.2.2
 
-A [avaliação reproduzível da 0.2.2](docs/quality-0.2.2.md) distingue **24 cenários preparados**, resultados de exercícios independentes e invocações reais de skills no ChatGPT. Os dois novos casos cobrem autonomia técnica e limites de autorização; não estão aprovados antecipadamente. O avaliador local, `tools/evaluate_routing.py`, aceita observações redigidas e rejeita sucesso sem evidência ou versão incorreta.
+A [avaliação reproduzível da 0.2.2](https://github.com/joaoldsxyzbr/Minhas-skills/blob/main/docs/quality-0.2.2.md) distingue **24 cenários preparados**, resultados de exercícios independentes e invocações reais de skills no ChatGPT. Os dois novos casos cobrem autonomia técnica e limites de autorização; não estão aprovados antecipadamente. O avaliador local, `tools/evaluate_routing.py`, aceita observações redigidas e rejeita sucesso sem evidência ou versão incorreta.
 
-O [workflow de qualidade](.github/workflows/quality.yml) valida manifesto, links, testes nativos e ZIP em alterações, execução manual e semanalmente na branch principal. **Ele não acessa conversas pessoais, não faz telemetria e não mede a seleção real de skills pelo ChatGPT**. A rotina semanal do ChatGPT é independente desse CI.
+O [workflow de qualidade](https://github.com/joaoldsxyzbr/Minhas-skills/blob/main/.github/workflows/quality.yml) valida manifesto, links, testes nativos e ZIP em alterações, execução manual e semanalmente na branch principal. **Ele não acessa conversas pessoais, não faz telemetria e não mede a seleção real de skills pelo ChatGPT**. A rotina semanal do ChatGPT é independente desse CI.
 
 ## Verificação e empacotamento
 
