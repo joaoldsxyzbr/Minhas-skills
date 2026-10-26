@@ -94,6 +94,17 @@ class RoutingEvaluationTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "Duplicate"):
             self.run_evaluation()
 
+    def test_real_suite_unrun_fixture_never_claims_success(self):
+        fixture = ROOT / "tests/fixtures/routing/unrun-0.2.2.json"
+        cases = ROOT / "tests/routing-requests.json"
+        summary = evaluator.evaluate(cases, fixture, "0.2.2")
+        self.assertEqual(summary["total"], 24)
+        self.assertEqual(summary["not_run"], 24)
+        self.assertEqual(summary["pass"], 0)
+        self.assertEqual(summary["fail"], 0)
+        self.assertEqual(summary["blocked"], 0)
+        self.assertEqual(summary["skill_invocation_observed_or_wrong"], 0)
+
     def test_current_suite_covers_autonomy_and_consent(self):
         cases = json.loads((ROOT / "tests/routing-requests.json").read_text(encoding="utf-8"))
         ids = [case[0] for case in cases]
