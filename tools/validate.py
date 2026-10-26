@@ -62,7 +62,7 @@ def validate(root):
     except (OSError, ValueError, KeyError, TypeError) as exc:
         errors.append('invalid manifest: '+str(exc))
     skills=sorted((root/'skills').glob('*/SKILL.md'))
-    check(len(skills)==21, f'expected 21 skills, found {len(skills)}')
+    check(bool(skills), 'at least one skill is required')
     names=set()
     for path in skills:
         try:
@@ -79,7 +79,6 @@ def validate(root):
             check(path.name!='SKILL.md' or len(path.relative_to(root).parts)==3,f'undiscoverable nested skill: {path}')
             check(path.suffix=='.md',f'unexpected runtime payload: {path}')
             text=path.read_text()
-            check(not re.search(r'(?m)^```(?:ts|typescript|tsx|rust|go|ruby)\s*$',text),f'{path}: unsupported program example')
             check(not re.search(r'superpowers:|cf-cli skill|subagent-driven-development',text,re.I),f'{path}: external skill route')
     for path in [*(root/'skills').rglob('*.md'),*[root/f for f in ROOT_FILES if f.endswith('.md')]]:
         if not path.exists():errors.append(f'missing required file: {path}');continue
@@ -120,7 +119,7 @@ def main():
     args=parser.parse_args();errors=validate(args.root)
     if errors:
         print('\n'.join(errors));return 1
-    print('PASS: manifest, 21 skill headers, local links/anchors, package boundaries and payload policy')
+    print(f'PASS: manifest, {len(list((args.root / "skills").glob("*/SKILL.md")))} skill headers, local links/anchors, package boundaries and payload policy')
     if args.archive:print(f'PASS: {package(args.root,args.archive)} packaged files; ZIP integrity checked')
     return 0
 

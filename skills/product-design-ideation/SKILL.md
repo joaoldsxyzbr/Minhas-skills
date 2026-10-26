@@ -20,7 +20,7 @@ This is the lead discovery workflow for product UX. Do not also run brainstormin
 
 ## Generate directions
 
-- Develop two or three meaningfully different approaches when the problem supports alternatives.
+- Develop the meaningful alternatives the problem actually supports, without imposing a fixed number of approaches.
 - For each, explain the main interaction, benefits, costs, and risks in concrete terms.
 - Keep options grounded in the user task, accessibility, platform constraints, and the existing product.
 - Recommend one direction and explain which evidence or constraint drives the recommendation.

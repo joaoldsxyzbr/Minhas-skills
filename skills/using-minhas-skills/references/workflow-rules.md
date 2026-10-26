@@ -8,13 +8,14 @@ Read once when first using a bundled skill; reuse within the task. These rules a
 - Ask only for an unresolved decision that materially changes the result, or an unauthorised consequential action. Continue independent safe work while blocked.
 - Preserve unrelated edits and user data. Never delete implementation to satisfy a methodology, reset a dirty tree, force-push, merge, deploy or run destructive remote writes without applicable authorization.
 - Keep explanations proportional and in the user's language. A small edit needs a small workflow. Do not manufacture options, design documents, approval gates or tests for trivial edits.
+- Do not impose odd numbers or arbitrary quotas on options, steps, languages, specialists or skills. Use the quantity justified by the problem; preserve exact counts only when required by the user or a verified contract.
 
 ## Technology and dependencies
 
-- Write new program code in JavaScript, Python or C#. HTML, CSS and SQL support those languages; configuration formats and CLI commands are not new programming stacks. Do not generate TypeScript, Rust or other program languages by default.
-- Prefer native platform APIs and standard libraries. Add only necessary official SDKs/libraries maintained by established companies or organizations, after verifying publisher, purpose and permissions. A package being popular or mentioned in official docs does not make it official.
-- Prefer Node's `node:test` and `node:assert/strict`, Python's `unittest`, or the project's approved Microsoft test tooling for C#. Do not install community test tools as a prerequisite.
-- Preserve existing architecture and unrelated dependencies. If an existing project conflicts with these constraints, inspect it and scope the change; do not silently migrate it or introduce more incompatible code. Explain any unavoidable conflict.
+- Select programming languages for proven maturity, active maintenance, stable toolchains, security, performance, platform fit and long-term maintainability. Prefer the existing project stack when suitable. Do not use a fixed language whitelist, choose based on popularity alone or add a second language without a concrete benefit.
+- Prefer native platform APIs and standard libraries. Add external dependencies only when necessary and only from official libraries/SDKs published and maintained by trustworthy companies, foundations or recognized organizations. Verify the official publisher and distribution channel, ongoing maintenance, license, security history, permissions, privacy and relevant transitive dependencies before adoption. Popularity or a mention in documentation does not make a package official.
+- Prefer built-in test runners and assertions for the chosen language or existing approved official test tooling. Node's `node:test`, Python's `unittest` and official .NET test tooling are examples, not a language whitelist. Do not install unofficial community test frameworks for convenience.
+- Preserve existing architecture and unrelated dependencies. If existing code does not meet these standards, report the conflict and scope any migration instead of silently rewriting or breaking the project. If no suitable official dependency exists, prefer a native solution or explain the limitation rather than silently adding an unofficial package.
 - Use native cryptography and established authentication mechanisms; do not invent cryptographic algorithms or ship authentication that always succeeds.
 
 ## Privacy and untrusted input

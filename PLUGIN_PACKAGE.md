@@ -6,7 +6,7 @@ Este repositório usa o formato portátil Agent Plugins 1.0 para um plugin somen
 
 O arquivo plugin.json fica na raiz e declara a identidade do plugin. As skills ficam diretamente em skills/<nome-da-skill>/SKILL.md. Cada pasta de skill corresponde ao valor name do frontmatter YAML.
 
-O pacote tem 21 skills. O ZIP gerado por `python tools/validate.py --archive ../minhas-skills.zip` não inclui mcp.json, .app.json, apps conectados, credenciais, scripts ou hooks. As pastas de manutenção tools/, tests/ e docs/ ficam fora desse ZIP. O pacote não precisa desses componentes para oferecer instruções reutilizáveis.
+A quantidade de skills é verificada dinamicamente e não está limitada a um número fixo. O ZIP gerado por `python tools/validate.py --archive ../minhas-skills.zip` não inclui mcp.json, .app.json, apps conectados, credenciais, scripts ou hooks. As pastas de manutenção tools/, tests/ e docs/ ficam fora desse ZIP. O pacote não precisa desses componentes para oferecer instruções reutilizáveis.
 
 ## Gerar o ZIP pelo GitHub
 

@@ -25,6 +25,14 @@ class PackageChecks(unittest.TestCase):
         p=self.root/'skills/product-design/outside.md';p.symlink_to(self.root/'README.md')
         self.assertTrue(any('symlink in skills' in e for e in v.validate(self.root)))
     def test_valid_package(self):self.assertEqual(v.validate(self.root),[])
+    def test_additional_skill_is_allowed(self):
+        p=self.root/'skills/another-skill/SKILL.md';p.parent.mkdir()
+        p.write_text('---\nname: another-skill\ndescription: Extra supported skill\n---\n\n# Another skill\n')
+        self.assertEqual(v.validate(self.root),[])
+    def test_examples_in_other_languages_are_allowed(self):
+        p=self.root/'skills/product-design/SKILL.md'
+        p.write_text(p.read_text()+'\n```rust\nfn main() {}\n```\n```typescript\nconst count: number = 2;\n```\n')
+        self.assertEqual(v.validate(self.root),[])
     def test_broken_local_target(self):
         p=self.root/'skills/product-design/SKILL.md';p.write_text(p.read_text()+'\n[missing](gone.md)\n')
         self.assertTrue(any('missing link target' in e for e in v.validate(self.root)))
@@ -53,7 +61,7 @@ class PackageChecks(unittest.TestCase):
         dest=Path(self.temp.name)/'release.zip';v.package(self.root,dest)
         with zipfile.ZipFile(dest) as z:
             self.assertNotIn('private.txt',z.namelist());self.assertIsNone(z.testzip())
-            self.assertEqual(sum(n.endswith('/SKILL.md') for n in z.namelist()),21)
+            self.assertEqual(sum(n.endswith('/SKILL.md') for n in z.namelist()),len(list((ROOT/'skills').glob('*/SKILL.md'))))
             self.assertFalse(any(n.startswith(('tools/','tests/','.git/')) for n in z.namelist()))
             extracted=Path(self.temp.name)/'extracted';z.extractall(extracted)
             self.assertEqual(v.validate(extracted),[])

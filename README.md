@@ -19,6 +19,12 @@ O objetivo é reunir práticas úteis em um pacote revisável, sem mecanismos pr
 - Pesquisa aprofundada: deep-research.
 - using-minhas-skills direciona tarefas para o fluxo mais específico.
 
+## Diretrizes de tecnologia
+
+As skills **não impõem uma lista fixa de linguagens** nem quantidades ímpares de opções, etapas ou especialistas. A escolha deve considerar maturidade, manutenção ativa, estabilidade, segurança, desempenho, adequação à plataforma e custo de manutenção. Preservar a arquitetura existente é preferível a migrar por preferência pessoal.
+
+Priorize APIs e bibliotecas padrão. Dependências externas novas só devem ser propostas quando necessárias e **oficiais**, publicadas e mantidas por empresas, fundações ou organizações reconhecidas. Verifique origem, licença, manutenção, segurança, privacidade e dependências transitivas; popularidade não equivale a caráter oficial. Quando não existir opção oficial adequada, explique o limite ou proponha solução nativa, sem instalar alternativas comunitárias por conveniência.
+
 ## Plugin do ChatGPT
 
 O manifesto portátil [plugin.json](plugin.json) e a pasta skills/ deixam o repositório no formato de um plugin somente de skills. Para preparar o ZIP pelo GitHub e conferir a estrutura, siga [PLUGIN_PACKAGE.md](PLUGIN_PACKAGE.md).

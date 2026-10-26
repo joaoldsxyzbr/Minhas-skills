@@ -17,7 +17,7 @@ Product experience and UX direction belong to the bundled [product-design-ideati
 
 Identify the goal, users, success criteria, constraints and non-goals. Ask one focused question only when the missing answer changes the result materially. Do useful read-only investigation without asking permission for every lookup.
 
-When there are real alternatives, present two or three with evidence, cost and tradeoffs; recommend one. Do not manufacture alternatives for an obvious small fix. A diagram or prototype may help, but must not require a companion server or external skill.
+When there are meaningful alternatives, present only those needed to make the decision, with evidence, cost and tradeoffs; recommend the best-supported direction. Do not manufacture options or impose a fixed count for a small decision. A diagram or prototype may help, but must not require a companion server or external skill.
 
 ## Deliver and hand off
 
