@@ -5,7 +5,7 @@ description: "Select the smallest bundled workflow for engineering, design, Clou
 
 # Using Minhas Skills
 
-Apply the [shared rules](references/workflow-rules.md). Classify the user's current intent and requested result, not isolated keywords. If nothing needs a specialist (greeting, stable explanation, simple copy edit), respond directly. Do not force a technical workflow onto an unrelated task.
+Apply the [shared rules](references/workflow-rules.md). Classify the user's current intent and requested result, not isolated keywords. If nothing needs a specialist (greeting, stable explanation, simple copy edit), respond directly. Do not force a technical workflow onto an unrelated task. When implementation is requested in plain language, select the appropriate technical decisions autonomously under the shared rules; missing technology preferences alone do not require brainstorming or approval.
 
 ## Intent precedence
 

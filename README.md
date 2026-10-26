@@ -25,6 +25,12 @@ As skills **não impõem uma lista fixa de linguagens** nem quantidades ímpares
 
 Priorize APIs e bibliotecas padrão. Dependências externas novas só devem ser propostas quando necessárias e **oficiais**, publicadas e mantidas por empresas, fundações ou organizações reconhecidas. Verifique origem, licença, manutenção, segurança, privacidade e dependências transitivas; popularidade não equivale a caráter oficial. Quando não existir opção oficial adequada, explique o limite ou proponha solução nativa, sem instalar alternativas comunitárias por conveniência.
 
+## Autonomia nas decisões técnicas
+
+O usuário informa **o resultado desejado**; as skills orientam o agente a investigar o contexto, escolher a solução tecnicamente mais adequada e executar o trabalho autorizado, sem exigir conhecimento de programação nem transferir decisões rotineiras ao usuário. Isso inclui linguagem, arquitetura, APIs oficiais, dependências necessárias, organização do código e testes.
+
+O agente deve preservar o escopo e a arquitetura existente quando apropriado, explicar decisões importantes em linguagem simples e verificar os resultados. **Autonomia técnica não é autorização irrestrita**: pedidos apenas de planejamento continuam sendo planejamento, e alterações destrutivas, gastos, permissões, implantação em produção ou mudanças de escopo importantes exigem autorização correspondente.
+
 ## Plugin do ChatGPT
 
 O manifesto portátil [plugin.json](plugin.json) e a pasta skills/ deixam o repositório no formato de um plugin somente de skills. Para preparar o ZIP pelo GitHub e conferir a estrutura, siga [PLUGIN_PACKAGE.md](PLUGIN_PACKAGE.md).
