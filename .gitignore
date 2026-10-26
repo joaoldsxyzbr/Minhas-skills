@@ -1,0 +1,7 @@
+# Evidência de execução local: nunca publicar conversas ou transcrições privadas
+observations.local.json
+*.observations.local.json
+local-reports/
+__pycache__/
+*.pyc
+*.zip

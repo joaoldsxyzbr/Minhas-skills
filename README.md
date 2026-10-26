@@ -2,7 +2,7 @@
 
 Coleção portável de skills para desenvolvimento, produto, Cloudflare, GitHub e pesquisa aprofundada.
 
-O objetivo é reunir práticas úteis em um pacote revisável, sem mecanismos próprios de telemetria ou rastreamento. As skills são instruções em Markdown. O plugin não inclui scripts de execução automática, dependências ou envio próprio de dados para serviços externos. As ferramentas de manutenção em `tools/` e os testes em `tests/` usam somente a biblioteca padrão do Python, rodam manualmente e ficam fora do ZIP gerado pelo validador.
+O objetivo é reunir práticas úteis em um pacote revisável, sem mecanismos próprios de telemetria ou rastreamento. As skills são instruções em Markdown. O plugin não inclui scripts de execução automática, dependências ou envio próprio de dados para serviços externos. As ferramentas de manutenção em `tools/` e os testes em `tests/` usam somente a biblioteca padrão do Python, podem ser executados manualmente ou pelo CI do GitHub e ficam fora do ZIP gerado pelo validador.
 
 ## Conteúdo
 
@@ -55,6 +55,12 @@ Cada skill fica em uma pasta própria dentro de skills/ e contém SKILL.md. Copi
 O roteador escolhe um fluxo principal conforme a intenção e acrescenta somente o apoio técnico necessário. As regras compartilhadas são lidas uma vez; referências detalhadas entram apenas quando necessárias. Invocação direta também aplica essas regras. O host decide quais descrições ficam disponíveis e quais skills carrega; o pacote não promete ativação automática infalível.
 
 As skills e seus arquivos auxiliares ficam neste pacote. Documentação oficial pode fornecer evidências e integrações disponíveis podem executar ações autorizadas, sem encaminhamento para skills de outros plugins.
+
+## Auditoria da versão 0.2.2
+
+A [avaliação reproduzível da 0.2.2](https://github.com/joaoldsxyzbr/Minhas-skills/blob/main/docs/quality-0.2.2.md) distingue **24 cenários preparados**, resultados de exercícios independentes e invocações reais de skills no ChatGPT. Os dois novos casos cobrem autonomia técnica e limites de autorização; não estão aprovados antecipadamente. O avaliador local, `tools/evaluate_routing.py`, aceita observações redigidas e rejeita sucesso sem evidência ou versão incorreta.
+
+O [workflow de qualidade](https://github.com/joaoldsxyzbr/Minhas-skills/blob/main/.github/workflows/quality.yml) valida manifesto, links, testes nativos e ZIP em alterações, execução manual e semanalmente na branch principal. **Ele não acessa conversas pessoais, não faz telemetria e não mede a seleção real de skills pelo ChatGPT**. A rotina semanal do ChatGPT é independente desse CI.
 
 ## Verificação e empacotamento
 
