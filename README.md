@@ -1,10 +1,18 @@
 # Minhas Skills
 
-Coleção portável de skills para desenvolvimento, produto, Cloudflare, GitHub e pesquisa aprofundada.
+Coleção portável de skills para tarefas gerais do ChatGPT, desenvolvimento, produto, Cloudflare, GitHub e pesquisa aprofundada.
 
 O objetivo é reunir práticas úteis em um pacote revisável, sem mecanismos próprios de telemetria ou rastreamento. As skills são instruções em Markdown. O plugin não inclui scripts de execução automática, dependências ou envio próprio de dados para serviços externos. As ferramentas de manutenção em `tools/` e os testes em `tests/` usam somente a biblioteca padrão do Python, podem ser executados manualmente ou pelo CI do GitHub e ficam fora do ZIP gerado pelo validador.
 
 ## Conteúdo
+
+### Uso geral do ChatGPT
+- writing-and-editing: redação, reescrita, tradução e síntese de textos substanciais.
+- file-workflows: leitura, análise e produção solicitada de documentos, PDFs, planilhas e apresentações.
+- multimodal-workflows: interpretação de mídia disponibilizada e criação/edição visual explicitamente pedida.
+- everyday-planning: planejamento e decisões do cotidiano, respeitando disponibilidade de dados e ferramentas.
+- As quatro skills são orientações; não acrescentam por si só recursos de arquivos, áudio, vídeo, imagem, compras ou agendamento.
+- [Escopo e cenários pendentes da expansão](docs/general-chatgpt-coverage.md).
 
 ### Engenharia e colaboração
 - brainstorming, writing-plans, executing-plans, test-driven-development, systematic-debugging e verification-before-completion.
@@ -52,9 +60,13 @@ Cada skill fica em uma pasta própria dentro de skills/ e contém SKILL.md. Copi
 
 ## Roteamento e carregamento
 
-O roteador escolhe um fluxo principal conforme a intenção e acrescenta somente o apoio técnico necessário. As regras compartilhadas são lidas uma vez; referências detalhadas entram apenas quando necessárias. Invocação direta também aplica essas regras. O host decide quais descrições ficam disponíveis e quais skills carrega; o pacote não promete ativação automática infalível.
+O roteador escolhe um fluxo principal conforme a intenção e acrescenta somente o apoio técnico necessário. Uma pergunta simples não precisa acionar uma skill; o objetivo é cobrir tarefas recorrentes sem sobrecarregar a conversa. As regras compartilhadas são lidas uma vez; referências detalhadas entram apenas quando necessárias. Invocação direta também aplica essas regras. O host decide quais descrições ficam disponíveis e quais skills carrega; o pacote não promete ativação automática infalível.
 
 As skills e seus arquivos auxiliares ficam neste pacote. Documentação oficial pode fornecer evidências e integrações disponíveis podem executar ações autorizadas, sem encaminhamento para skills de outros plugins.
+
+## Expansão em desenvolvimento
+
+A inclusão de fluxos gerais em uma branch de proposta não implica que a versão 0.2.2 publicada tenha sido atualizada ou instalada. A validação estrutural de uma branch não comprova o roteamento automático em conversas reais. O lançamento requer uma versão e avaliações de comportamento coerentes.
 
 ## Auditoria da versão 0.2.2
 
