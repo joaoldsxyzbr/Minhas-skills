@@ -9,7 +9,7 @@ Apply the [shared rules](references/workflow-rules.md). Classify the user's curr
 
 ## Intent precedence
 
-When rows overlap, choose the process lead before the technical domain. For general-purpose tasks, **the requested outcome beats the input medium**: summarizing a PDF usually leads with writing-and-editing plus file support; building an editable budget leads with file-workflows; editing an image leads with multimodal-workflows; a source-intensive comparison leads with deep-research. A general request never overrides a specific process or domain lead.
+For general-purpose tasks, **the requested outcome beats the input medium**: summarizing a PDF usually leads with writing-and-editing plus file support; building an editable budget leads with file-workflows; editing an image leads with multimodal-workflows; a source-intensive comparison leads with deep-research. A general request never overrides a specific process or domain lead.
 
 When rows overlap, choose the process lead before the technical domain:
 
