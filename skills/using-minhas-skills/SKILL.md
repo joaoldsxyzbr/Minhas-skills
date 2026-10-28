@@ -41,6 +41,10 @@ For example, reviewing Worker code uses code-review + workers-best-practices; in
 | Create, improve or audit skills | [skill-authoring-audit](../skill-authoring-audit/SKILL.md) | Verify consuming-agent behavior |
 | Broad comparison or evidence-heavy investigation | [deep-research](../deep-research/SKILL.md) | Specific domain skill if implementation is also requested |
 
+## GitHub-centered project continuity
+
+For a repository-backed software task, apply the [GitHub lifecycle](references/github-lifecycle.md) **as shared coordination**, not as another lead skill. After selecting the process lead above, consult the repository source of truth before writing or declaring completion. For "continue this project", "what is left?", and "is it ready?", recover the current branch, code, relevant Issues/PRs, and CI evidence before choosing the next safe step. Prefer existing work items and plans; never infer approvals from an Issue or create process artifacts for a trivial edit.
+
 ## Resolve combined requests
 
 Use one process lead plus the minimum domain support. Examples: unknown D1 bug → debugging + D1, then TDD and verification; new UX → product ideation, then a plan only if needed; explicit approved implementation → execution, not another discovery round. For a small, clear edit, act directly and check the affected result.
