@@ -12,7 +12,7 @@ O objetivo é reunir práticas úteis em um pacote revisável, sem mecanismos pr
 - multimodal-workflows: interpretação de mídia disponibilizada e criação/edição visual explicitamente pedida.
 - everyday-planning: planejamento e decisões do cotidiano, respeitando disponibilidade de dados e ferramentas.
 - As quatro skills são orientações; não acrescentam por si só recursos de arquivos, áudio, vídeo, imagem, compras ou agendamento.
-- [Escopo e cenários pendentes da expansão](docs/general-chatgpt-coverage.md).
+- [Escopo e cenários pendentes da expansão](https://github.com/joaoldsxyzbr/Minhas-skills/blob/feat/general-chatgpt-workflows-2026-10-27/docs/general-chatgpt-coverage.md).
 
 ### Engenharia e colaboração
 - brainstorming, writing-plans, executing-plans, test-driven-development, systematic-debugging e verification-before-completion.
