@@ -1,6 +1,6 @@
 ---
 name: using-minhas-skills
-description: "Select the smallest bundled workflow for engineering, design, Cloudflare, GitHub, skill authoring or research; resolve overlaps and load references only as needed."
+description: "Select the smallest bundled workflow for engineering, design, Cloudflare, GitHub, research or everyday ChatGPT content, file and media tasks; resolve overlaps and load references only as needed."
 ---
 
 # Using Minhas Skills
@@ -8,6 +8,8 @@ description: "Select the smallest bundled workflow for engineering, design, Clou
 Apply the [shared rules](references/workflow-rules.md). Classify the user's current intent and requested result, not isolated keywords. If nothing needs a specialist (greeting, stable explanation, simple copy edit), respond directly. Do not force a technical workflow onto an unrelated task. When implementation is requested in plain language, select the appropriate technical decisions autonomously under the shared rules; missing technology preferences alone do not require brainstorming or approval.
 
 ## Intent precedence
+
+For general-purpose tasks, **the requested outcome beats the input medium**: summarizing a PDF usually leads with writing-and-editing plus file support; building an editable budget leads with file-workflows; editing an image leads with multimodal-workflows; a source-intensive comparison leads with deep-research. A general request never overrides a specific process or domain lead.
 
 When rows overlap, choose the process lead before the technical domain:
 
@@ -40,11 +42,15 @@ For example, reviewing Worker code uses code-review + workers-best-practices; in
 | Cloudflare architecture or other services | [cloudflare-platform](../cloudflare-platform/SKILL.md) | Only affected service references |
 | Create, improve or audit skills | [skill-authoring-audit](../skill-authoring-audit/SKILL.md) | Verify consuming-agent behavior |
 | Broad comparison or evidence-heavy investigation | [deep-research](../deep-research/SKILL.md) | Specific domain skill if implementation is also requested |
+| Substantial writing, rewriting, translation or summarization | [writing-and-editing](../writing-and-editing/SKILL.md) | [file-workflows](../file-workflows/SKILL.md) only when real files must be read or created |
+| Create, transform or analyze a document, PDF, spreadsheet, slide deck or structured file | [file-workflows](../file-workflows/SKILL.md) | Writing guidance when text is also a substantial deliverable |
+| Interpret supplied media or explicitly generate or edit visuals | [multimodal-workflows](../multimodal-workflows/SKILL.md) | File workflow only when a file/report is also requested |
+| Practical nontechnical planning or everyday comparison | [everyday-planning](../everyday-planning/SKILL.md) | [deep-research](../deep-research/SKILL.md) leads an evidence-heavy study |
 
 ## Resolve combined requests
 
 Use one process lead plus the minimum domain support. Examples: unknown D1 bug → debugging + D1, then TDD and verification; new UX → product ideation, then a plan only if needed; explicit approved implementation → execution, not another discovery round. For a small, clear edit, act directly and check the affected result.
 
-Specific intent wins: an existing UX audit is not new ideation; a PR review is not an instruction to fix or merge; a Cloudflare implementation problem is not automatically broad research. Do not chain routers in a loop or load every skill. Reassess only when the task changes phase or new evidence requires it.
+Specific intent wins: an existing UX audit is not new ideation; a PR review is not an instruction to fix or merge; a Cloudflare implementation problem is not automatically broad research. Do not chain routers in a loop or load every skill. The added everyday workflows guide how to use native capabilities already available; they do not provide new tools, permissions, recording access, purchases or automatic scheduling. Reassess only when the task changes phase or new evidence requires it.
 
 Before a technical completion claim, use [verification-before-completion](../verification-before-completion/SKILL.md). Host skill discovery uses descriptions and available context; this router guides selection but cannot guarantee invocation for every prompt.
