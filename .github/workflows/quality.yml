@@ -30,6 +30,16 @@ jobs:
       - name: Run standard-library regression tests
         run: python -m unittest discover -s tests -v
       - name: Show unrun behavioral scenarios without false positives
-        run: python tools/evaluate_routing.py --observations tests/fixtures/routing/unrun-0.2.2.json
+        run: |
+          # Keep the empty-observation CI fixture aligned with the checked-out revision.
+          python - <<'PY'
+          import json
+          import os
+          from pathlib import Path
+          version = json.loads(Path("plugin.json").read_text(encoding="utf-8"))["version"]
+          observation = {"version": version, "revision": os.environ["GITHUB_SHA"], "observations": []}
+          Path("../unrun-ci.json").write_text(json.dumps(observation), encoding="utf-8")
+          PY
+          python tools/evaluate_routing.py --observations ../unrun-ci.json
       - name: Verify distributable ZIP
         run: python tools/validate.py --archive ../minhas-skills-ci.zip
